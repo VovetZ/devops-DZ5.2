@@ -47,20 +47,16 @@
 *Приложить вывод команд установленных версий каждой из программ, оформленный в markdown.*
 
 ### Ответ:
-
-user@ubuntu-virt:~/vagrant$ VirtualBox -v
-Графический интерфейс VirtualBox Версия 6.1.32_Ubuntu r149290
-
-user@ubuntu-virt:~/vagrant$ vagrant -v
-Vagrant 2.2.6
-
-user@ubuntu-virt:~/vagrant$ ansible --version
-ansible 2.9.6
-  config file = /etc/ansible/ansible.cfg
-  configured module search path = ['/home/user/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+```bash
+vk@vkvm:~$ vboxmanage -v
+6.1.34_Ubuntur150636
+vk@vkvm:~$ ansible --version
+ansible 2.10.8
+  config file = None
+  configured module search path = ['/home/vk/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
   ansible python module location = /usr/lib/python3/dist-packages/ansible
   executable location = /usr/bin/ansible
-  python version = 3.8.10 (default, Mar 15 2022, 12:22:08) [GCC 9.4.0]
-
-~~~
-
+  python version = 3.10.4 (main, Jun 29 2022, 12:14:53) [GCC 11.2.0]
+vk@vkvm:~$ vagrant -v
+Vagrant 2.2.19
+```
